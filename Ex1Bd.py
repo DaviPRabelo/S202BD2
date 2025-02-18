@@ -15,7 +15,7 @@ class Aula:
         self.aluno = Aluno
         lista.append(self.aluno.nome)
     def listar_presenca(self):
-        print("Presença na aula sobre Programação Orientada a Objetos, ministrada pelo professor Lucas:")
+        print("Presença na aula sobre",self.nome,", ministrada pelo professor Lucas:")
         for x in range (2):
             print("O aluno", lista[x], "Está presente")
 
