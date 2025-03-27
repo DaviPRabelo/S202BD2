@@ -17,7 +17,7 @@ class PersonModel:
     def read_book_by_id(self, id: str):
         try:
             res = self.db.collection.find_one({"_id": ObjectId(id)})
-            print(f"Person found: {res}")
+            print(f"Book found: {res}")
             return res
         except Exception as e:
             print(f"An error occurred while reading person: {e}")
